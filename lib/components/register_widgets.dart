@@ -12,16 +12,16 @@ class registerwidgets extends StatelessWidget {
       onTap: onTap,
       child: Container(
           decoration: BoxDecoration(
-              color: containerColor ?? Color(0xffFFFFFF),
-              borderRadius: BorderRadius.circular(35)),
+              color: containerColor ?? Colors.blueGrey.shade100,
+              borderRadius: BorderRadius.circular(25)),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 110, vertical: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 145, vertical: 10),
             child: Text(
               title,
               style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 40,
-                  fontWeight: FontWeight.bold),
+                color: Colors.black,
+                fontSize: 20,
+              ),
             ),
           )),
     );

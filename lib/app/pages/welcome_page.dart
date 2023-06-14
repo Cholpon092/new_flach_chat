@@ -30,7 +30,7 @@ class WelcomePage extends StatelessWidget {
         registerwidgets(
           title: 'Sign in',
           onTap: () {
-            context.go('/signin');
+            context.go('/sign_in_page');
           },
         ),
         SizedBox(
@@ -38,8 +38,10 @@ class WelcomePage extends StatelessWidget {
         ),
         registerwidgets(
           title: 'Sign up',
-          onTap: () {},
-          containerColor: Colors.blue,
+          onTap: () {
+            context.go('/sign_up_page');
+          },
+          containerColor: Colors.blue.shade300,
         )
       ]),
     );

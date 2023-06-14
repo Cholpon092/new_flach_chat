@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:new_flach_chat/app/pages/sign_in_page.dart';
+import 'package:new_flach_chat/app/pages/auth/sign_in_page.dart';
+import 'package:new_flach_chat/app/pages/auth/sign_up_page.dart';
+import 'package:new_flach_chat/app/pages/home_page.dart';
 import 'package:new_flach_chat/app/pages/welcome_page.dart';
 
 void main() {
@@ -16,9 +18,21 @@ final GoRouter _router = GoRouter(
       },
       routes: <RouteBase>[
         GoRoute(
-          path: 'signin',
+          path: 'sign_in_page',
           builder: (BuildContext context, GoRouterState state) {
             return const SignInPage();
+          },
+        ),
+        GoRoute(
+          path: 'sign_up_page',
+          builder: (BuildContext context, GoRouterState state) {
+            return const SignUpPage();
+          },
+        ),
+        GoRoute(
+          path: 'home_page',
+          builder: (BuildContext context, GoRouterState state) {
+            return const HomePage();
           },
         ),
       ],
