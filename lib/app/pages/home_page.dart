@@ -7,6 +7,29 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Material(
+      child: SafeArea(
+        child: Scaffold(
+            body: Column(
+          children: [
+            Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(20),
+                        bottomLeft: Radius.circular(20)),
+                    color: Colors.blue),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Salam',
+                    style: TextStyle(
+                      fontSize: 25,
+                    ),
+                  ),
+                ))
+          ],
+        )),
+      ),
+    );
   }
 }
