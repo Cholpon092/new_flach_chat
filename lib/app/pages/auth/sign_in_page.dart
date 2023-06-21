@@ -79,6 +79,9 @@ class SignInPage extends StatelessWidget {
               height: 20,
             ),
             registerwidgets(
+              onTap: () {
+                context.go('/home_page');
+              },
               title: 'Sign in',
             )
           ],
